@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    scroll-behavior: smooth;
+    --main: #da9f5b;
+    --second_main: #33211d;
+    --trans_bg: #2b1e1c;
+    --light_font: #cf9553;
+    --bg: #fffbf2;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+body {
+    background-color: var(--bg);
+}
+
+@media (max-width: 600px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+/*TODO **************************** Global styles  *************************************/
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+button:hover,
+.ok:hover,
+.menu img:hover,
+.btnBook:hover,
+.lastList i:hover {
+    cursor: pointer;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.292);
+}
+
+.fa-check span,
+.right span {
+    line-height: 35px;
+}
+
+header img,
+.offer img,
+.bookForm img,
+.endPage img {
+    width: 100%;
+}
+
+/*! **************************** Global Font Style  *************************************/
+p {
+    opacity: .8;
+    font-weight: 300;
+    text-overflow: clip;
+}
+
+.us h4 {
+    color: var(--light_font);
+    font-weight: 300;
+}
+
+.us h4::before {
+    content: "";
+    height: 50px;
+    width: 2px;
+    display: block;
+    background-color: var(--light_font);
+    position: absolute;
+    top: -55px;
+    left: 50%;
+}
+
+.offer-title h1,
+.onlineReservation h1 {
+    color: var(--light_font);
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+.offer-title h2,
+.onlineReservation h2 {
+    color: white;
+    font-weight: 700;
+}
+
+h3,
+h6,
+.us h2,
+.card_title h5 {
+    color: var(--second_main);
+}
+
+/*? **************************** Nav & Intro  *************************************/
+header {
+    background-image: linear-gradient(rgba(48, 34, 33, 0.715), rgba(48, 34, 33, 0.715)), url(../images/carousel-1.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.brand h1 {
+    font-weight: 700;
+    color: white;
+}
+
+.navbar {
+    width: 40%;
+}
+
+nav ul {
+    width: 100%;
+}
+
+nav ul li,
+nav ul li a,
+.intro h4,
+.intro h1 {
+    color: white;
+}
+
+nav ul li a:hover,
+.home,
+.intro h5 {
+    color: var(--light_font);
+}
+
+.intro h1 {
+    font-weight: 900;
+    font-size: 6rem;
+}
+
+@media (max-width: 980px) {
+
+    .navbar,
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul {
+        display: none;
+        position: relative;
+    }
+
+    nav ul li a {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        text-align: end;
+    }
+}
+
+/*? **************************** About Us  *************************************/
+.us {
+    text-align: center;
+}
+
+.us h2 {
+    font-weight: 700;
+}
+
+.about {
+    word-spacing: 0.3rem;
+}
+
+.our-story button {
+    background-color: var(--second_main);
+    color: white;
+}
+
+.fa-check {
+    color: var(--main);
+}
+
+.fa-check span {
+    color: var(--second_main);
+    font-weight: 500;
+}
+
+.our-vision button {
+    background-color: var(--main);
+    color: var(--second_main);
+}
+
+.our-story button,
+.our-vision button {
+    border: none;
+    width: 35%;
+    height: 40px;
+}
+
+.our-story button:hover {
+    color: var(--light_font);
+}
+
+.our-vision button:hover {
+    color: white;
+}
+
+@media (max-width: 990px) {
+    .aboutUs {
+        width: fit-content;
+        font-size: medium;
+    }
+}
+
+/*? **************************** Service *************************************/
+.card {
+    background-color: var(--bg) !important;
+    border: none;
+}
+
+.icon_container {
+    height: 30px;
+    width: 30px;
+    background-color: var(--main);
+    color: var(--second_main);
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%
+}
+
+/*? **************************** Offer *************************************/
+.offer {
+    margin-top: 5%;
+    background-image: linear-gradient(rgba(48, 34, 33, 0.885), rgba(48, 34, 33, 0.885)), url(../images/bg.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.offer-title h4 {
+    color: white;
+    font-weight: 400;
+}
+
+.email {
+    width: 250px;
+    outline: none;
+    background-color: white;
+}
+
+.email::placeholder {
+    padding-left: 5%;
+    opacity: .6;
+}
+
+.ok {
+    width: 100px;
+    margin-left: -2%;
+    background-color: var(--main);
+}
+
+.email,
+.ok {
+    height: 40px;
+    border: none;
+}
+
+.ok:hover {
+    color: white;
+}
+
+@media (max-width:650px) {
+    .offer {
+        width: 100%;
+    }
+
+}
+
+/*? **************************** Menu *************************************/
+.notification {
+    position: relative;
+    top: 28px;
+    right: -85px;
+    background-color: var(--main);
+    color: var(--second_main);
+    padding: 4px;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 8px;
+    border: solid 10px var(--main);
+}
+
+.menu h5 {
+    color: var(--second_main);
+}
+
+/*? **************************** Form *************************************/
+.bookForm {
+    margin-top: 5%;
+    background-image: linear-gradient(rgba(48, 34, 33, 0.885), rgba(48, 34, 33, 0.885)), url(../images/bg.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+input::placeholder {
+    padding-left: 15px;
+    opacity: .6;
+}
+
+.onlineReservation p,
+.right span,
+.bookTable h1 {
+    color: white;
+}
+
+.bookTable {
+    background-image: linear-gradient(rgba(48, 34, 33, 0.885), rgba(48, 34, 33, 0.885));
+    margin-left: -1%;
+}
+
+.bookTable h1 {
+    text-align: center;
+    font-weight: 700;
+}
+
+input {
+    height: 40px;
+    outline: none;
+    background-color: transparent;
+    border: solid 1px var(--main);
+}
+
+.bookTable input,
+select,
+textarea {
+    color: var(--bg);
+    padding-left: 10px;
+}
+
+.btnBook {
+    color: black !important;
+    background-color: var(--main);
+    height: 47px;
+}
+
+.btnBook:hover {
+    color: white !important;
+}
+
+
+@media (max-width:990px) {
+    .bookTable {
+        margin: auto;
+    }
+}
+
+/*? **************************** Footer *************************************/
+.endPage {
+    background-image: linear-gradient(rgba(48, 34, 33, 0.885), rgba(48, 34, 33, 0.885)), url(../images/bg.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.endPage .email {
+    width: 100% !important;
+}
+
+.endPage .ok {
+    width: 90px;
+    border: solid 3px var(--main);
+}
+
+.endPage {
+    color: #fffbf2;
+    line-height: 35px;
+}
+
+.social {
+    width: 30px;
+    height: 30px;
+    border: solid 1px var(--bg);
+    text-align: center;
+}
+
+.lastList i {
+    color: #fffbf2;
+}
+
+.lastList i:hover {
+    color: var(--main);
+}
+
+footer p {
+    text-align: center;
+    line-height: 10px;
+    font-weight: 400;
+}
+
+footer span {
+    color: var(--main);
+    font-weight: 500;
+}
